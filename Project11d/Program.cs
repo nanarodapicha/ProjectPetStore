@@ -12,12 +12,18 @@ namespace Project11d
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        static Form1 mainForm;
+        static Form2 secondForm;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+  
+            mainForm = new Form1();
+            secondForm = new Form2();
+
+            Application.Run(mainForm);
         }
     }
 }

@@ -44,6 +44,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnFind = new System.Windows.Forms.Button();
+            this.btnOther = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblId
@@ -115,7 +116,7 @@
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(145, 6);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(177, 22);
             this.txtId.TabIndex = 6;
@@ -123,7 +124,7 @@
             // txtInfo
             // 
             this.txtInfo.Location = new System.Drawing.Point(145, 81);
-            this.txtInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtInfo.Margin = new System.Windows.Forms.Padding(4);
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.Size = new System.Drawing.Size(177, 22);
             this.txtInfo.TabIndex = 7;
@@ -131,7 +132,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(145, 46);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(177, 22);
             this.txtName.TabIndex = 8;
@@ -139,7 +140,7 @@
             // txtAge
             // 
             this.txtAge.Location = new System.Drawing.Point(145, 118);
-            this.txtAge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAge.Margin = new System.Windows.Forms.Padding(4);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(177, 22);
             this.txtAge.TabIndex = 10;
@@ -148,7 +149,7 @@
             // 
             this.cmbType.FormattingEnabled = true;
             this.cmbType.Location = new System.Drawing.Point(145, 152);
-            this.cmbType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbType.Margin = new System.Windows.Forms.Padding(4);
             this.cmbType.Name = "cmbType";
             this.cmbType.Size = new System.Drawing.Size(177, 24);
             this.cmbType.TabIndex = 11;
@@ -158,9 +159,9 @@
             this.lstAnimals.FormattingEnabled = true;
             this.lstAnimals.ItemHeight = 16;
             this.lstAnimals.Location = new System.Drawing.Point(330, 11);
-            this.lstAnimals.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstAnimals.Margin = new System.Windows.Forms.Padding(4);
             this.lstAnimals.Name = "lstAnimals";
-            this.lstAnimals.Size = new System.Drawing.Size(195, 308);
+            this.lstAnimals.Size = new System.Drawing.Size(195, 260);
             this.lstAnimals.TabIndex = 12;
             // 
             // btnUpdate
@@ -168,8 +169,8 @@
             this.btnUpdate.BackColor = System.Drawing.Color.YellowGreen;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnUpdate.Location = new System.Drawing.Point(13, 258);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Location = new System.Drawing.Point(15, 286);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(151, 66);
             this.btnUpdate.TabIndex = 13;
@@ -182,8 +183,8 @@
             this.btnAdd.BackColor = System.Drawing.Color.YellowGreen;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAdd.Location = new System.Drawing.Point(13, 184);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Location = new System.Drawing.Point(14, 212);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(153, 66);
             this.btnAdd.TabIndex = 14;
@@ -195,9 +196,9 @@
             // 
             this.btnDelete.BackColor = System.Drawing.Color.YellowGreen;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDelete.Location = new System.Drawing.Point(174, 258);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDelete.Location = new System.Drawing.Point(174, 286);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(148, 66);
             this.btnDelete.TabIndex = 15;
@@ -210,14 +211,27 @@
             this.btnFind.BackColor = System.Drawing.Color.YellowGreen;
             this.btnFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnFind.Location = new System.Drawing.Point(174, 184);
-            this.btnFind.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFind.Location = new System.Drawing.Point(174, 212);
+            this.btnFind.Margin = new System.Windows.Forms.Padding(4);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(148, 66);
             this.btnFind.TabIndex = 17;
             this.btnFind.Text = "Find animal by id";
             this.btnFind.UseVisualStyleBackColor = false;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
+            // btnOther
+            // 
+            this.btnOther.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnOther.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOther.Location = new System.Drawing.Point(330, 286);
+            this.btnOther.Name = "btnOther";
+            this.btnOther.Size = new System.Drawing.Size(195, 65);
+            this.btnOther.TabIndex = 18;
+            this.btnOther.Text = "Other form\r\n";
+            this.btnOther.UseVisualStyleBackColor = false;
+            this.btnOther.Click += new System.EventHandler(this.btnOther_Click);
             // 
             // Form1
             // 
@@ -226,7 +240,8 @@
             this.BackColor = System.Drawing.Color.DarkGreen;
             this.BackgroundImage = global::Project11d.Properties.Resources._5319163;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(546, 334);
+            this.ClientSize = new System.Drawing.Size(547, 365);
+            this.Controls.Add(this.btnOther);
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
@@ -245,7 +260,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Pet Shop";
@@ -271,5 +286,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnFind;
+        private System.Windows.Forms.Button btnOther;
     }
 }

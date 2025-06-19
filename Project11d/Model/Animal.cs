@@ -13,7 +13,7 @@ namespace Project11d
         public string Description { get; set; }
         public double Price { get; set; }
         public int Age { get; set; }
-        public int AnimalTypeId { get; set; } //fk
+        public int AnimalTypeId { get; set; } //Foreign Key
         public AnimalType AnimalTypes { get; set; }
     }
 }

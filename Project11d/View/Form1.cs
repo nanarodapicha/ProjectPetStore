@@ -25,12 +25,8 @@ namespace Project11d
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            List<AnimalType> types = animalTypeLogic.GetAllAnimalTypes();
-            cmbType.DataSource = types;
-            cmbType.DisplayMember = "Name";
-            cmbType.ValueMember = "Id";
-          //  cmbType.SelectedIndex = 0;
-          
+            LoadComboBox();
+
             btnGetAll_Click(sender, e);
         }
 
@@ -211,5 +207,22 @@ namespace Project11d
             cmbType.SelectedIndex = 0;
         }
 
+        private void btnOther_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            using (Form2 form2 = new Form2())
+            {
+                form2.ShowDialog(); 
+            }
+            this.Show();
+            LoadComboBox();
+        }
+        private void LoadComboBox()
+        {
+            List<AnimalType> types = animalTypeLogic.GetAllAnimalTypes();
+            cmbType.DataSource = types;
+            cmbType.DisplayMember = "Name";
+            cmbType.ValueMember = "Id";
+        }
     }
 }
